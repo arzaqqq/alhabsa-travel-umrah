@@ -11,7 +11,12 @@ const PropertyCards = () => {
       status: "Unfurnished",
       availability: "Immediately Available",
       image: "/img/banner2.jpg",
-      harga: '150.0000'
+      harga: '150.0000',
+      date:'03 April 2025',
+      hotelMekkah:'Nama Hotel, Mekkah',
+      hotelMadinah:'Nama Hotel, Madinah',
+      airline:'Garuda Indonesia',
+      airport:'Soekarno Hatta'
     },
     {
       title: "2 BHK Luxury Flats",
@@ -20,7 +25,12 @@ const PropertyCards = () => {
       status: "Semi-Furnished",
       availability: "Ready to Move",
       image: "/img/foto3.jpg",
-      harga: '150.0000'
+      harga: '150.0000',
+      date: '30 Maret 2025',
+      hotelMekkah:'Nama Hotel, Mekkah',
+      hotelMadinah:'Nama Hotel, Madinah',
+      airline:'Garuda Indonesia',
+      airport:'Soekarno Hatta'
     },
   ];
 
@@ -74,14 +84,14 @@ const PropertyCards = () => {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid lg:grid-cols-2 gap-4">
                     <div className="flex items-center">
                         <div className="bg-blue-100 p-2 rounded-full mr-3">
                         <FaCalendarAlt className="w-4 h-4 text-blue-600" />
                         </div>
                         <div>
                         <p className="text-xs text-gray-500">Date</p>
-                        <p className="font-semibold">03 April 2025</p>
+                        <p className="font-semibold">{property.date}</p>
                         </div>
                     </div>
 
@@ -91,7 +101,7 @@ const PropertyCards = () => {
                         </div>
                         <div>
                         <p className="text-xs text-gray-500">Hotels</p>
-                        <p className="font-semibold">Nama Hotel, Makkah</p>
+                        <p className="font-semibold">{property.hotelMekkah}</p>
                         </div>
                     </div>
 
@@ -101,7 +111,7 @@ const PropertyCards = () => {
                         </div>
                         <div>
                         <p className="text-xs text-gray-500">Hotels</p>
-                        <p className="font-semibold">Nama Hotel, Madinah</p>
+                        <p className="font-semibold">{property.hotelMadinah}</p>
                         </div>
                     </div>
 
@@ -111,7 +121,7 @@ const PropertyCards = () => {
                         </div>
                         <div>
                         <p className="text-xs text-gray-500">Airline</p>
-                        <p className="font-semibold">Garuda Indonesia</p>
+                        <p className="font-semibold">{property.airline}</p>
                         </div>
                     </div>
 
@@ -121,7 +131,7 @@ const PropertyCards = () => {
                         </div>
                         <div>
                         <p className="text-xs text-gray-500">Airport</p>
-                        <p className="font-semibold">Soekarno-Hatta (CGK)</p>
+                        <p className="font-semibold">{property.airport}</p>
                         </div>
                     </div>
 

@@ -26,7 +26,7 @@ const HeaderCard = () => {
             <a href="#" className='text-white hover:text-pink-500 transition-colors'>
               <FaInstagram size={24} />
             </a>
-            <a href="#" className='text-white hover:text-pink-500 transition-colors'>
+            <a href="#" className='text-white hover:text-blue-500 transition-colors'>
               <FaTiktok size={24} />
             </a>
           </div>
