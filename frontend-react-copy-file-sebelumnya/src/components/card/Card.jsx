@@ -10,7 +10,8 @@ const PropertyCards = () => {
       lokasi: "Mekkah",
       status: "Unfurnished",
       availability: "Immediately Available",
-      image: "/img/banner2.jpg"
+      image: "/img/banner2.jpg",
+      harga: '150.0000'
     },
     {
       title: "2 BHK Luxury Flats",
@@ -18,7 +19,8 @@ const PropertyCards = () => {
       lokasi: "Madinah",
       status: "Semi-Furnished",
       availability: "Ready to Move",
-      image: "/img/foto3.jpg"
+      image: "/img/foto3.jpg",
+      harga: '150.0000'
     },
   ];
 
@@ -127,18 +129,11 @@ const PropertyCards = () => {
 
                 <div className="bg-gray-50 py-4 px-2 rounded-lg">
                   <div className="flex justify-between">
-                    {[
-                      { label: "Price : ",
-                        value: '150.0000'
-                      },
-
-
-                    ].map((detail, i) => (
-                      <div key={i} className="text-start">
-                        <p className="text-[19px] text-gray-500">{detail.label}</p>
-                        <p className="font-bold text-[35px] text-rose-500">{detail.value}</p>
+                      <div  className="text-start">
+                        <p className="text-[19px] text-gray-500">Price : </p>
+                        <p className="font-bold text-[35px] text-rose-500">{property.harga}</p>
                       </div>
-                    ))}
+
                   </div>
                 </div>
 
